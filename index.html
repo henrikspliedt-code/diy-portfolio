@@ -3,212 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DIY-Portfolio Hamburg | Räume neu denken</title>
-  <meta name="description" content="Privates DIY-Portfolio aus Hamburg: Interior-, Möbel- und Außenlösungen mit Stil, Funktion und hoher Vorher-Nachher-Wirkung." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>DIY-Portfolio Hamburg</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar__brand">DIY-Portfolio Hamburg</div>
-    <button class="topbar__toggle" aria-controls="site-menu" aria-expanded="false">
-      <span class="topbar__toggle-label">Menü</span>
-      <span class="topbar__toggle-icon" aria-hidden="true"></span>
-    </button>
-    <nav id="site-menu" class="topbar__nav" aria-label="Hauptnavigation">
-      <a href="#intro">Intro</a>
-      <a href="#projects">Projekte</a>
-      <a href="#gallery">Galerie</a>
-      <a href="#details">Details</a>
-      <a href="#about">Über mich</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="hero">
-      <div class="hero__image-wrapper">
-        <img src="images/project1.jpg" alt="Wohnlicher Essbereich mit maßgefertigter Sitzbank, Holztisch und warmer Beleuchtung." class="hero__image" />
-        <div class="hero__overlay"></div>
-      </div>
-      <div class="hero__content container">
-        <span class="eyebrow">Räume neu denken</span>
-        <h1>Aus Standard wird persönlich.</h1>
-        <p class="hero__text">Individuelle Lösungen für Räume, Möbel und Außenbereiche in Hamburg.</p>
-        <a class="button button--secondary" href="#intro">Mehr erfahren</a>
-      </div>
-    </section>
+<header class="topbar">
+  <div class="topbar__brand">DIY-Portfolio Hamburg</div>
 
-    <section class="section section--soft" id="intro">
-      <div class="container">
-        <div class="section__intro reveal">
-          <span class="label">Intro</span>
-          <h2>Ein ruhiger Blick auf Raum und Funktion</h2>
-          <p>Seit vielen Jahren entstehen hier DIY-Projekte rund ums Haus – mit Blick für Gestaltung, Funktion und bezahlbare Lösungen. Im Mittelpunkt stehen Räume, die besser funktionieren, wohnlicher wirken und im Alltag wirklich genutzt werden.</p>
-        </div>
-      </div>
-    </section>
+  <button class="topbar__toggle" aria-label="Menü öffnen" aria-controls="site-menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <section class="section section--projects" id="projects">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="label">Hauptprojekte</span>
-          <h2>Kuratiert und bewusst</h2>
-          <p>Drei Projekte, die zeigen, wie Wohnlichkeit, Struktur und Alltagstauglichkeit zusammenkommen.</p>
-        </div>
+  <nav id="site-menu" class="topbar__nav" aria-hidden="true">
+    <button class="topbar__close" aria-label="Menü schließen">×</button>
 
-        <div class="grid grid--2 project-grid">
-          <article class="card project-card reveal">
-            <img src="images/project1.jpg" alt="Essbereich mit Sitzbank, Stauraum und warmer Beleuchtung." />
-            <div class="card__text">
-              <p class="card__eyebrow">Sitzbank mit Stauraum</p>
-              <h3>Sitzbank mit Stauraum</h3>
-              <p>Aus einem offenen Essbereich entstand ein gemütlicher zentraler Ort im Haus – mit integrierter Sitzbank, viel Stauraum, warmem Holz, versteckter Technik und indirekter Beleuchtung.</p>
-            </div>
-          </article>
+    <a href="#hero">Start</a>
+    <a href="#intro">Intro</a>
+    <a href="#projects">Hauptprojekte</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#details">Details</a>
+    <a href="#about">Über mich</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
 
-          <article class="card project-card reveal">
-            <img src="images/project4.jpg" alt="Hauswirtschaftsraum mit ruhigen Schrankfronten und klarer Struktur." />
-            <div class="card__text">
-              <p class="card__eyebrow">Hauswirtschaftsraum mit System</p>
-              <h3>Hauswirtschaftsraum mit System</h3>
-              <p>Aus offenen Regalen wurde ein ruhiger, fast wohnlicher Funktionsraum. Geschlossene Schränke, integrierte Waschmaschine und Trockner, Beleuchtung und ein klares Ordnungssystem schaffen Struktur im Alltag.</p>
-            </div>
-          </article>
+<main>
 
-          <article class="card project-card reveal">
-            <img src="images/project2-1.jpg" alt="Schlafzimmer mit dunkler Akzentwand und indirekter Beleuchtung." />
-            <div class="card__text">
-              <p class="card__eyebrow">Schlafzimmer im Hotelstil</p>
-              <h3>Schlafzimmer im Hotelstil</h3>
-              <p>Ein helles, eher neutrales Schlafzimmer wurde zu einem warmen Rückzugsort mit dunkler Akzentwand, Leistenstruktur, indirektem Licht, schwebenden Nachttischen und ruhiger Hotelatmosphäre.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+<section class="hero" id="hero">
+  <div class="hero__image-wrapper">
+    <img src="images/project1.jpg" alt="Wohnlicher Essbereich mit maßgefertigter Sitzbank, Holztisch und warmer Beleuchtung." class="hero__image" />
+    <div class="hero__overlay"></div>
+  </div>
+  <div class="hero__content container">
+    <span class="eyebrow">Räume neu denken</span>
+    <h1>Aus Standard wird persönlich.</h1>
+    <p class="hero__text">Individuelle Lösungen für Räume, Möbel und Außenbereiche in Hamburg.</p>
+    <a class="button button--secondary" href="#intro">Mehr erfahren</a>
+  </div>
+</section>
 
-    <section class="section section--card" id="gallery">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="label">Galerie</span>
-          <h2>Ausgewählte Ansichten</h2>
-          <p>Eine kompakte Auswahl, die Stimmung, Material und Raumwirkung zeigt.</p>
-        </div>
-
-        <div class="grid grid--2 card-grid gallery-grid">
-          <article class="card reveal">
-            <img src="images/project3-1.jpg" alt="Kinderzimmer mit erhöhtem Bett, integriertem Stauraum und individueller Schreineroptik." />
-            <div class="card__text">
-              <h3>Kinderzimmer</h3>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <img src="images/project3-2.jpg" alt="Raumtrenner aus Holzlamellen im Kinderzimmer." />
-            <div class="card__text">
-              <h3>Lamellenwand / Raumtrenner</h3>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <img src="images/project2-2.jpg" alt="Vorher-Nachher-Bild eines Sideboards mit Holzplatte und Beleuchtung." />
-            <div class="card__text">
-              <h3>Sideboard Vorher/Nachher</h3>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <img src="images/project5.jpg" alt="Outdoor-Küche mit Grill und Stauraum auf der Terrasse." />
-            <div class="card__text">
-              <h3>Outdoor-Küche</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft" id="details">
-      <div class="container">
-        <div class="section__header reveal">
-          <span class="label">Details</span>
-          <h2>Details, die den Unterschied machen</h2>
-          <p>Licht, versteckte Technik, Stauraum und der Materialmix aus Holz, Grau, Weiß und Salbei.</p>
-        </div>
-
-        <div class="grid grid--2 detail-grid">
-          <article class="card reveal">
-            <div class="card__text card__text--compact">
-              <p class="card__eyebrow">Licht</p>
-              <h3>Atmosphäre durch Beleuchtung</h3>
-              <p>Indirektes Licht schafft Tiefe und eine zeitlose Stimmung.</p>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__text card__text--compact">
-              <p class="card__eyebrow">Technik</p>
-              <h3>Versteckte Funktion</h3>
-              <p>Steckdosen, Ladezonen und Kabelmanagement werden bewusst unsichtbar geplant.</p>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__text card__text--compact">
-              <p class="card__eyebrow">Stauraum</p>
-              <h3>Ordnung im Alltag</h3>
-              <p>Mehr Platz entsteht durch durchdachte Einbauten statt zusätzlicher Möbel.</p>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__text card__text--compact">
-              <p class="card__eyebrow">Materialmix</p>
-              <h3>Ruhige Materialien</h3>
-              <p>Holz, Grau, Weiß und Salbei wirken gemeinsam warm und hochwertig.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--about" id="about">
-      <div class="container about-grid">
-        <div class="about-copy reveal">
-          <span class="label">Über mich</span>
-          <h2>Persönlich, ruhig und ehrlich</h2>
-          <p>Ich bin kein gelernter Handwerker. Alles ist über Jahre aus eigenen Projekten entstanden – mit Neugier, Liebe zum Detail und dem Wunsch, Räume schöner, praktischer und bezahlbarer zu lösen.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--contact" id="contact">
-      <div class="container contact-grid reveal">
-        <div>
-          <span class="label">Kontakt</span>
-          <h2>Schlicht und privat</h2>
-          <p>Dieses Portfolio ist privat geteilt. Wenn Sie einen Austausch wünschen, schreiben Sie bitte eine kurze Nachricht.</p>
-        </div>
-
-        <div class="contact-details">
-          <a href="mailto:kontakt@diy-portfolio.hamburg" class="contact-link">kontakt@diy-portfolio.hamburg</a>
-          <a href="https://wa.me/491234567890" class="contact-link">WhatsApp</a>
-          <p class="contact-note">Nur konkrete Anfragen. Keine üblichen Werbebotschaften.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>Privates DIY-Portfolio aus Hamburg. Räume, Möbel und Außenbereiche neu gedacht.</p>
+<section class="section section--soft" id="intro">
+  <div class="container">
+    <div class="section__intro">
+      <span class="label">Intro</span>
+      <h2>Ein ruhiger Blick auf Raum und Funktion</h2>
+      <p>Seit vielen Jahren entstehen hier DIY-Projekte rund ums Haus – mit Blick für Gestaltung, Funktion und bezahlbare Lösungen. Im Mittelpunkt stehen Räume, die besser funktionieren, wohnlicher wirken und im Alltag wirklich genutzt werden.</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="section section--projects" id="projects">
+  <div class="container">
+    <div class="section__header">
+      <span class="label">Hauptprojekte</span>
+      <h2>Kuratiert und bewusst</h2>
+      <p>Drei Projekte, die zeigen, wie Wohnlichkeit, Struktur und Alltagstauglichkeit zusammenkommen.</p>
+    </div>
+
+    <div class="grid grid--2 project-grid">
+      <article class="card project-card">
+        <img src="images/project1.jpg" alt="Essbereich mit Sitzbank, Stauraum und warmer Beleuchtung." />
+        <div class="card__text">
+          <p class="card__eyebrow">Sitzbank mit Stauraum</p>
+          <h3>Sitzbank mit Stauraum</h3>
+          <p>Aus einem offenen Essbereich entstand ein gemütlicher zentraler Ort im Haus – mit integrierter Sitzbank, viel Stauraum, warmem Holz, versteckter Technik und indirekter Beleuchtung.</p>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="images/project4.jpg" alt="Hauswirtschaftsraum mit ruhigen Schrankfronten und klarer Struktur." />
+        <div class="card__text">
+          <p class="card__eyebrow">Hauswirtschaftsraum mit System</p>
+          <h3>Hauswirtschaftsraum mit System</h3>
+          <p>Aus offenen Regalen wurde ein ruhiger, fast wohnlicher Funktionsraum. Geschlossene Schränke, integrierte Waschmaschine und Trockner, Beleuchtung und ein klares Ordnungssystem schaffen Struktur im Alltag.</p>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="images/project2-1.jpg" alt="Schlafzimmer mit dunkler Akzentwand und indirekter Beleuchtung." />
+        <div class="card__text">
+          <p class="card__eyebrow">Schlafzimmer im Hotelstil</p>
+          <h3>Schlafzimmer im Hotelstil</h3>
+          <p>Ein helles, eher neutrales Schlafzimmer wurde zu einem warmen Rückzugsort mit dunkler Akzentwand, Leistenstruktur, indirektem Licht, schwebenden Nachttischen und ruhiger Hotelatmosphäre.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--card" id="gallery">
+  <div class="container">
+    <div class="section__header">
+      <span class="label">Galerie</span>
+      <h2>Weitere Projekte</h2>
+      <p>Eine kompakte Auswahl, die Stimmung, Material und Raumwirkung zeigt.</p>
+    </div>
+
+    <div class="grid grid--2 card-grid gallery-grid">
+      <article class="card">
+        <img src="images/project3-1.jpg" alt="Kinderzimmer mit erhöhtem Bett, integriertem Stauraum und individueller Schreineroptik." />
+        <div class="card__text">
+          <h3>Kinderzimmer</h3>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/project3-2.jpg" alt="Raumtrenner aus Holzlamellen im Kinderzimmer." />
+        <div class="card__text">
+          <h3>Lamellenwand / Raumtrenner</h3>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/project2-2.jpg" alt="Sideboard mit Holz und Beleuchtung." />
+        <div class="card__text">
+          <h3>Sideboard Vorher/Nachher</h3>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/project5.jpg" alt="Outdoor-Küche mit Grill und Stauraum auf der Terrasse." />
+        <div class="card__text">
+          <h3>Outdoor-Küche</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft" id="details">
+  <div class="container">
+    <div class="section__header">
+      <span class="label">Details</span>
+      <h2>Details, die den Unterschied machen</h2>
+      <p>Licht, versteckte Technik, Stauraum und der Materialmix aus Holz, Grau, Weiß und Salbei.</p>
+    </div>
+
+    <div class="grid grid--2 detail-grid">
+      <article class="card">
+        <div class="card__text card__text--compact">
+          <p class="card__eyebrow">Licht</p>
+          <h3>Atmosphäre durch Beleuchtung</h3>
+          <p>Indirektes Licht schafft Tiefe und eine zeitlose Stimmung.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__text card__text--compact">
+          <p class="card__eyebrow">Technik</p>
+          <h3>Versteckte Funktion</h3>
+          <p>Steckdosen, Ladezonen und Kabelmanagement werden bewusst unsichtbar geplant.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__text card__text--compact">
+          <p class="card__eyebrow">Stauraum</p>
+          <h3>Ordnung im Alltag</h3>
+          <p>Mehr Platz entsteht durch durchdachte Einbauten statt zusätzlicher Möbel.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__text card__text--compact">
+          <p class="card__eyebrow">Materialmix</p>
+          <h3>Ruhige Materialien</h3>
+          <p>Holz, Grau, Weiß und Salbei wirken gemeinsam warm und hochwertig.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--about" id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <span class="label">Über mich</span>
+      <h2>Persönlich, ruhig und ehrlich</h2>
+      <p>Ich bin kein gelernter Handwerker. Alles ist über Jahre aus eigenen Projekten entstanden – mit Neugier, Liebe zum Detail und dem Wunsch, Räume schöner, praktischer und bezahlbarer zu lösen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="label">Kontakt</span>
+      <h2>Schlicht und privat</h2>
+      <p>Dieses Portfolio ist privat geteilt. Wenn Sie einen Austausch wünschen, schreiben Sie bitte eine kurze Nachricht.</p>
+    </div>
+
+    <div class="contact-details">
+      <a href="mailto:kontakt@diy-portfolio.hamburg" class="contact-link">kontakt@diy-portfolio.hamburg</a>
+      <a href="https://wa.me/491234567890" class="contact-link">WhatsApp</a>
+      <p class="contact-note">Nur konkrete Anfragen. Keine üblichen Werbebotschaften.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Privates DIY-Portfolio aus Hamburg. Räume, Möbel und Außenbereiche neu gedacht.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
