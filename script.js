@@ -1,36 +1,43 @@
-const navToggle = document.querySelector('.topbar__toggle');
-const navMenu = document.getElementById('site-menu');
-const navLinks = navMenu.querySelectorAll('a');
+document.addEventListener("DOMContentLoaded", () => {
 
-if (navToggle && navMenu) {
-  navToggle.addEventListener('click', () => {
-    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', String(!expanded));
-    navMenu.classList.toggle('is-open');
+  const toggle = document.querySelector(".topbar__toggle");
+  const nav = document.querySelector(".topbar__nav");
+  const closeBtn = document.querySelector(".topbar__close");
+  const body = document.body;
+
+  function openMenu() {
+    if (!nav || !toggle) return;
+    nav.classList.add("is-open");
+    nav.setAttribute("aria-hidden", "false");
+    toggle.setAttribute("aria-expanded", "true");
+    body.classList.add("menu-open");
+  }
+
+  function closeMenu() {
+    if (!nav || !toggle) return;
+    nav.classList.remove("is-open");
+    nav.setAttribute("aria-hidden", "true");
+    toggle.setAttribute("aria-expanded", "false");
+    body.classList.remove("menu-open");
+  }
+
+  if (toggle) {
+    toggle.addEventListener("click", openMenu);
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMenu);
+  }
+
+  const links = document.querySelectorAll(".topbar__nav a");
+  links.forEach(link => {
+    link.addEventListener("click", closeMenu);
   });
-}
 
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    if (navMenu.classList.contains('is-open')) {
-      navMenu.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav && nav.classList.contains("is-open")) {
+      closeMenu();
     }
   });
+
 });
-
-const revealElements = document.querySelectorAll('.reveal');
-const observerOptions = {
-  threshold: 0.15,
-};
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-revealElements.forEach((element) => revealObserver.observe(element));
