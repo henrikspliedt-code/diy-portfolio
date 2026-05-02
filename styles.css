@@ -296,3 +296,87 @@ body.menu-open {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.before-after-fade {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.before-after-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before-img {
+  z-index: 1;
+}
+
+.after-img {
+  z-index: 2;
+  opacity: 0;
+  animation: fadeBeforeAfter 6s ease-in-out infinite;
+}
+
+.before-after-label {
+  position: absolute;
+  z-index: 3;
+  top: 16px;
+  left: 16px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(31, 31, 31, 0.65);
+  color: #fff;
+}
+
+.label-after {
+  opacity: 0;
+  animation: fadeLabelAfter 6s ease-in-out infinite;
+}
+
+.label-before {
+  animation: fadeLabelBefore 6s ease-in-out infinite;
+}
+
+@keyframes fadeBeforeAfter {
+  0%, 30% {
+    opacity: 0;
+  }
+  45%, 85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLabelAfter {
+  0%, 30% {
+    opacity: 0;
+  }
+  45%, 85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLabelBefore {
+  0%, 30% {
+    opacity: 1;
+  }
+  45%, 85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
