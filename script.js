@@ -41,3 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+// BEFORE / AFTER SWITCH
+document.querySelectorAll(".before-after-wrapper").forEach(wrapper => {
+  const after = wrapper.querySelector(".after");
+
+  setTimeout(() => {
+    after.classList.add("show");
+  }, 2000);
+});
