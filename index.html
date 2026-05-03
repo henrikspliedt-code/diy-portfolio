@@ -15,296 +15,114 @@
   <div class="topbar__brand">DIY-Portfolio Hamburg</div>
 
   <button class="topbar__toggle" aria-label="Menü öffnen" aria-controls="site-menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </button>
 
   <nav id="site-menu" class="topbar__nav" aria-hidden="true">
-    <button class="topbar__close" aria-label="Menü schließen">×</button>
-
+    <button class="topbar__close">×</button>
     <a href="#hero">Start</a>
-    <a href="#intro">Intro</a>
     <a href="#projects">Hauptprojekte</a>
     <a href="#gallery">Weitere Projekte</a>
-    <a href="#details">Details</a>
-    <a href="#about">Über mich</a>
     <a href="#contact">Kontakt</a>
   </nav>
 </header>
 
 <main>
 
+<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero__image-wrapper">
-<img src="images/hero-outdoor-kueche.jpg" alt="Outdoor Küche mit Terrasse und BBQ-Bereich" class="hero__image" />
+    <img src="images/hero-outdoor-kueche.jpg" class="hero__image" />
     <div class="hero__overlay"></div>
   </div>
-  <div class="hero__content container">
-    <span class="eyebrow">Räume neu denken</span>
+  <div class="hero__content">
     <h1>Aus Standard wird persönlich.</h1>
-    <p class="hero__text">Individuelle Lösungen für Räume, Möbel und Außenbereiche in Hamburg.</p>
-    <a class="button button--secondary" href="#intro">Mehr erfahren</a>
   </div>
 </section>
 
-<section class="section section--soft" id="intro">
-  <div class="container">
-    <div class="section__intro">
-      <span class="label">Intro</span>
-      <h2>Ein ruhiger Blick auf Raum und Funktion</h2>
-      <p>Seit vielen Jahren entstehen hier DIY-Projekte rund ums Haus – mit Blick für Gestaltung, Funktion und bezahlbare Lösungen. Im Mittelpunkt stehen Räume, die besser funktionieren, wohnlicher wirken und im Alltag wirklich genutzt werden.</p>
+<!-- HAUPTPROJEKTE -->
+<section id="projects" class="section">
+  <h2>Hauptprojekte</h2>
+
+  <!-- HWR -->
+  <div class="card before-after-card">
+    <div class="before-after-fade">
+      <img src="images/hwr-before.jpg" class="before-img">
+      <img src="images/hwr-after.jpg" class="after-img">
     </div>
+    <h3>Hauswirtschaftsraum</h3>
+  </div>
+
+  <!-- SCHLAFZIMMER -->
+  <div class="card before-after-card">
+    <div class="before-after-fade">
+      <img src="images/bed-before.jpg" class="before-img">
+      <img src="images/bed-after.jpg" class="after-img">
+    </div>
+    <h3>Schlafzimmer</h3>
+  </div>
+
+</section>
+
+<!-- WEITERE PROJEKTE -->
+<section id="gallery" class="section">
+  <h2>Weitere Projekte</h2>
+
+  <div class="grid">
+
+    <!-- Sideboard -->
+    <div class="card before-after-card">
+      <div class="before-after-fade">
+        <img src="images/sideboard-before.jpg" class="before-img">
+        <img src="images/sideboard-after.jpg" class="after-img">
+      </div>
+      <h3>Sideboard</h3>
+    </div>
+
+    <!-- Lamellenwand -->
+    <div class="card before-after-card">
+      <div class="before-after-fade">
+        <img src="images/schrank-before.jpg" class="before-img">
+        <img src="images/schrank-after.jpg" class="after-img">
+      </div>
+      <h3>Lamellenwand</h3>
+    </div>
+
+    <!-- Terrasse -->
+    <div class="card before-after-card">
+      <div class="before-after-fade">
+        <img src="images/terrasse-before.jpg" class="before-img">
+        <img src="images/terrasse-after.jpg" class="after-img">
+      </div>
+      <h3>Terrasse</h3>
+    </div>
+
+    <!-- Neue Bilder korrekt -->
+    <div class="card">
+      <img src="images/wanddesign-final.jpg" loading="lazy">
+      <h3>Wanddesign</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/kinderzimmer-final.jpg" loading="lazy">
+      <h3>Kinderzimmer</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/outdoor-final.jpg" loading="lazy">
+      <h3>Outdoor Küche</h3>
+    </div>
+
   </div>
 </section>
 
-<section class="section section--projects" id="projects">
-  <div class="container">
-    <div class="section__header">
-      <span class="label">Hauptprojekte</span>
-      <h2>Kuratiert und bewusst</h2>
-      <p>Drei Projekte, die zeigen, wie Wohnlichkeit, Struktur und Alltagstauglichkeit zusammenkommen.</p>
-    </div>
-
-    <div class="grid grid--2 project-grid">
-
-      <article class="card project-card">
-        <img src="images/project1.jpg" alt="Essbereich mit Sitzbank, Stauraum und warmer Beleuchtung." />
-        <div class="card__text">
-          <p class="card__eyebrow">Sitzbank mit Stauraum</p>
-          <h3>Sitzbank mit Stauraum</h3>
-          <p>Aus einem offenen Essbereich entstand ein gemütlicher zentraler Ort im Haus – mit integrierter Sitzbank, viel Stauraum, warmem Holz, versteckter Technik und indirekter Beleuchtung.</p>
-        </div>
-      </article>
-
-      <article class="card project-card before-after">
-        <div class="before-after-wrapper">
-          <img src="images/hwr-before.jpg" class="before-after-img before-img" alt="Hauswirtschaftsraum vorher mit offenen Regalen und wenig Struktur." />
-          <img src="images/hwr-after.jpg" class="before-after-img after-img" alt="Hauswirtschaftsraum nachher mit geschlossenen Schränken und klarer Ordnung." />
-          <span class="before-after-label label-before">Vorher</span>
-          <span class="before-after-label label-after">Nachher</span>
-        </div>
-
-        <div class="card__text">
-          <p class="card__eyebrow">Hauswirtschaftsraum mit System</p>
-          <h3>Vom Abstellraum zur Struktur</h3>
-          <p>Offene Regale, Unruhe und wenig Platz wurden durch eine klare, geschlossene Schranklösung ersetzt. Der Raum wirkt jetzt ruhig, aufgeräumt und deutlich hochwertiger – bei gleicher Fläche.</p>
-        </div>
-      </article>
-
-      <article class="card project-card before-after-card">
-        <div class="before-after-fade">
-          <img src="images/bed-before.jpg" class="before-after-img before-img" alt="Schlafzimmer vorher." />
-          <img src="images/bed-after.jpg" class="before-after-img after-img" alt="Schlafzimmer nachher mit Akzentwand und Beleuchtung." />
-          <span class="before-after-label label-before">Vorher</span>
-          <span class="before-after-label label-after">Nachher</span>
-        </div>
-
-        <div class="card__text">
-          <p class="card__eyebrow">Schlafzimmer im Hotelstil</p>
-          <h3>Schlafzimmer im Hotelstil</h3>
-          <p>Ein helles, eher neutrales Schlafzimmer wurde zu einem warmen Rückzugsort mit dunkler Akzentwand, Leistenstruktur, indirektem Licht, schwebenden Nachttischen und ruhiger Hotelatmosphäre.</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="section section--card" id="gallery">
-  <div class="container">
-    <div class="section__header">
-      <span class="label">Weitere Projekte</span>
-      <h2>Weitere Projekte</h2>
-      <p>Eine kompakte Auswahl, die Stimmung, Material und Raumwirkung zeigt.</p>
-    </div>
-
-    <div class="grid grid--2 card-grid gallery-grid">
-
-      <article class="card before-after-card">
-        <div class="before-after-fade">
-          <img src="images/sideboard-before.jpg" class="before-after-img before-img" alt="Sideboard vorher als schlichtes Standardmöbel." />
-          <img src="images/sideboard-after.jpg" class="before-after-img after-img" alt="Sideboard nachher mit Holzauflage, Beleuchtung und hochwertigerer Wirkung." />
-          <span class="before-after-label label-before">Vorher</span>
-          <span class="before-after-label label-after">Nachher</span>
-        </div>
-        <div class="card__text">
-          <h3>Sideboard mit Aufwertung</h3>
-          <p>Aus einem schlichten Standardmöbel wurde durch Holz, Licht und klare Details ein deutlich hochwertigeres Element im Raum.</p>
-        </div>
-      </article>
-
-      <article class="card before-after-card">
-        <div class="before-after-fade">
-          <img src="images/schrank-before.jpg" class="before-after-img before-img" alt="Flurbereich vorher mit sichtbarem weißem Schrank." />
-          <img src="images/schrank-after.jpg" class="before-after-img after-img" alt="Flurbereich nachher mit verstecktem Schrank hinter Holzlamellen." />
-          <span class="before-after-label label-before">Vorher</span>
-          <span class="before-after-label label-after">Nachher</span>
-        </div>
-        <div class="card__text">
-          <h3>Versteckter Flurschrank</h3>
-          <p>Aus einem sichtbaren Schrank wurde eine ruhige Lamellenwand mit integriertem Stauraum – optisch aufgeräumt, funktional und deutlich hochwertiger.</p>
-        </div>
-      </article>
-
-      <article class="card before-after-card">
-        <div class="before-after-fade">
-          <img src="images/terrasse-before.jpg" alt="Terrasse vor dem Umbau" class="before-after-img before-img" />
-          <img src="images/terrasse-after.jpg" alt="Terrasse nach dem Umbau mit Beleuchtung" class="before-after-img after-img" />
-          <span class="before-after-label label-before">Vorher</span>
-          <span class="before-after-label label-after">Nachher</span>
-        </div>
-        <div class="card__text">
-          <h3>Terrassenbau</h3>
-          <p>Aus einer alten, unruhigen Fläche wurde ein stimmungsvoller Außenbereich mit Holzoptik, Licht und klarer Struktur.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/wanddesign-portfolio.jpg" alt="Geometrisches Wanddesign im Innenraum." />
-        <div class="card__text">
-          <h3>Geometrisches Wanddesign</h3>
-          <p>Mit einfachen Leisten und ruhiger Farbe entsteht eine hochwertige Wandgestaltung mit Tiefe.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/homeoffice-portfolio.jpg" alt="Homeoffice mit Lamellenwand, Licht und sauberem Kabelmanagement." />
-        <div class="card__text">
-          <h3>Homeoffice mit Lamellenwand</h3>
-          <p>Ein kleiner Arbeitsplatz wird durch Holz, Licht und versteckte Technik zu einem ruhigen Arbeitsbereich.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/kinderzimmer-hochbett-portfolio.jpg" alt="Kinderzimmer mit Hochbett und Stauraum." />
-        <div class="card__text">
-          <h3>Kinderzimmer Hochbettlösung</h3>
-          <p>Schlafen, Spielen und Stauraum in einer maßgeschneiderten Lösung für kleine Räume.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/kinderbett-portfolio.jpg" alt="Individuell gebautes Kinderbett mit Spielbereich." />
-        <div class="card__text">
-          <h3>Individuelles Kinderbett</h3>
-          <p>Ein halbhohes Bett mit Stauraum, Spielhöhle und individuell angepassten Elementen.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/gaestezimmer-tagbett-portfolio.jpg" alt="Gästezimmer mit Tagesbett und wohnlicher Gestaltung." />
-        <div class="card__text">
-          <h3>Gästezimmer mit Tagesbett</h3>
-          <p>Ein kleiner Raum wird zu Arbeitszimmer, Rückzugsort und Gästezimmer in einem.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/outdoor-kueche-portfolio.jpg" alt="Outdoor-Küche mit Grill und Stauraum." />
-        <div class="card__text">
-          <h3>Outdoor-Küche</h3>
-          <p>Eine individuelle BBQ-Lösung mit Stauraum, Arbeitsfläche und wohnlichem Charakter für den Sommergarten.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/terrasse-lounge-portfolio.jpg" alt="Terrassenlounge mit Sitzbereich und klarer Struktur." />
-        <div class="card__text">
-          <h3>Terrassen Lounge</h3>
-          <p>Ein Außenbereich mit klarer Linienführung, Lounge-Zone und wohnlicher Atmosphäre.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="images/sandkasten-portfolio.jpg" alt="Sandkasten und Pflanzkasten im Garten." />
-        <div class="card__text">
-          <h3>Sandkasten & Gartenbereich</h3>
-          <p>Kleine Gartenlösungen, die Spiel, Ordnung und Gestaltung miteinander verbinden.</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="section section--soft" id="details">
-  <div class="container">
-    <div class="section__header">
-      <span class="label">Details</span>
-      <h2>Details, die den Unterschied machen</h2>
-      <p>Licht, versteckte Technik, Stauraum und der Materialmix aus Holz, Grau, Weiß und Salbei.</p>
-    </div>
-
-    <div class="grid grid--2 detail-grid">
-      <article class="card">
-        <div class="card__text card__text--compact">
-          <p class="card__eyebrow">Licht</p>
-          <h3>Atmosphäre durch Beleuchtung</h3>
-          <p>Indirektes Licht schafft Tiefe und eine zeitlose Stimmung.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__text card__text--compact">
-          <p class="card__eyebrow">Technik</p>
-          <h3>Versteckte Funktion</h3>
-          <p>Steckdosen, Ladezonen und Kabelmanagement werden bewusst unsichtbar geplant.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__text card__text--compact">
-          <p class="card__eyebrow">Stauraum</p>
-          <h3>Ordnung im Alltag</h3>
-          <p>Mehr Platz entsteht durch durchdachte Einbauten statt zusätzlicher Möbel.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__text card__text--compact">
-          <p class="card__eyebrow">Materialmix</p>
-          <h3>Ruhige Materialien</h3>
-          <p>Holz, Grau, Weiß und Salbei wirken gemeinsam warm und hochwertig.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section--about" id="about">
-  <div class="container about-grid">
-    <div class="about-copy">
-      <span class="label">Über mich</span>
-      <h2>Persönlich, ruhig und ehrlich</h2>
-      <p>Ich bin kein gelernter Handwerker. Alles ist über Jahre aus eigenen Projekten entstanden – mit Neugier, Liebe zum Detail und dem Wunsch, Räume schöner, praktischer und bezahlbarer zu lösen.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section section--contact" id="contact">
-  <div class="container contact-grid">
-    <div>
-      <span class="label">Kontakt</span>
-      <h2>Schlicht und privat</h2>
-      <p>Dieses Portfolio ist privat geteilt. Wenn Sie einen Austausch wünschen, schreiben Sie bitte eine kurze Nachricht.</p>
-    </div>
-
-    <div class="contact-details">
-      <a href="mailto:kontakt@diy-portfolio.hamburg" class="contact-link">kontakt@diy-portfolio.hamburg</a>
-      <a href="https://wa.me/491234567890" class="contact-link">WhatsApp</a>
-      <p class="contact-note">Nur konkrete Anfragen. Keine üblichen Werbebotschaften.</p>
-    </div>
-  </div>
+<!-- KONTAKT -->
+<section id="contact" class="section">
+  <h2>Kontakt</h2>
+  <p>kontakt@diy-portfolio.hamburg</p>
 </section>
 
 </main>
-
-<footer class="footer">
-  <div class="container">
-    <p>Privates DIY-Portfolio aus Hamburg. Räume, Möbel und Außenbereiche neu gedacht.</p>
-  </div>
-</footer>
 
 <script src="script.js"></script>
 
