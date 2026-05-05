@@ -496,38 +496,35 @@ body.menu-open {
   font-size: 1.2rem;
 }
 
-/* MOBILE FINAL: weniger enger Bildausschnitt, ohne Desktop zu verändern */
-
+/* MOBILE FINAL: nur gezielte Bilder korrigieren, keine globalen Änderungen */
 @media (max-width: 719px) {
 
-  .image-sequence,
-  .before-after-wrapper,
-  .before-after-fade {
+  /* Esszimmer: nur Sequenzkarte etwas flacher, damit das Vorher-Bild weiter wirkt */
+  .image-sequence:has(img[src="images/Esszimmer-before.jpg"]) {
     height: 280px;
   }
 
-  img[src="images/Esszimmer-before.jpg"] {
-    object-position: center center;
+  /* Hauswirtschaftsraum: nur diese Karte */
+  .before-after-wrapper:has(img[src="images/hwr-before.jpg"]) {
+    height: 300px;
   }
 
-  img[src="images/hwr-before.jpg"] {
-    object-position: center center;
+  /* Vorbauwand: nur diese Sequenz */
+  .image-sequence:has(img[src="images/Vorbauwand-process.jpg"]) {
+    height: 300px;
   }
 
-  img[src="images/Vorbauwand-process.jpg"] {
-    object-position: center center;
+  /* Gartenbank/Sichtschutz: nur diese Sequenz */
+  .image-sequence:has(img[src="images/sichtschutz-before.jpg"]) {
+    height: 300px;
   }
 
-  img[src="images/sichtschutz-before.jpg"],
-  img[src="images/sichtschutz-after-1.jpg"],
-  img[src="images/sichtschutz-after-2.jpg"] {
-    object-position: center center;
+  /* Terrassenbau: nur diese Sequenz */
+  .image-sequence:has(img[src="images/terrasse-before.jpg"]) {
+    height: 300px;
   }
 
-  img[src="images/terrasse-before.jpg"] {
-    object-position: center center;
-  }
-
+  /* Outdoor-Küche: nur Einzelbild minimal anders ausrichten */
   img[src="images/outdoor-final.jpg"] {
     object-position: center center;
   }
