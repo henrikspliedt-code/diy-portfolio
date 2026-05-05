@@ -390,6 +390,7 @@ body.menu-open {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* ESSZIMMER 3ER-SEQUENZ: VORHER → NACHHER TAG → NACHHER ABEND */
 
 .image-sequence {
@@ -466,6 +467,9 @@ body.menu-open {
   70%, 92% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+/* CONTACT */
+
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -491,63 +495,41 @@ body.menu-open {
 .contact-icon {
   font-size: 1.2rem;
 }
+
+/* MOBILE FINAL: weniger enger Bildausschnitt, ohne Desktop zu verändern */
+
 @media (max-width: 719px) {
 
-  /* 1. Esszimmer vorher – etwas mehr Raum zeigen */
+  .image-sequence,
+  .before-after-wrapper,
+  .before-after-fade {
+    height: 280px;
+  }
+
   img[src="images/Esszimmer-before.jpg"] {
-    object-position: center 35%;
+    object-position: center center;
   }
 
-  /* 2. Hauswirtschaftsraum – mehr links/rechts sichtbar */
   img[src="images/hwr-before.jpg"] {
-    object-position: center 40%;
+    object-position: center center;
   }
 
-  /* 3. Vorbauwand Bauphase – mehr Kontext nach oben/unten */
-  img[src="images/Vorbauwand-before.jpg"] {
-    object-position: center 30%;
+  img[src="images/Vorbauwand-process.jpg"] {
+    object-position: center center;
   }
 
-  /* 4. Gartenbank / Sichtschutz – weniger enger Fokus */
   img[src="images/sichtschutz-before.jpg"],
-  img[src="images/sichtschutz-after.jpg"] {
-    object-position: center 38%;
+  img[src="images/sichtschutz-after-1.jpg"],
+  img[src="images/sichtschutz-after-2.jpg"] {
+    object-position: center center;
   }
 
-}
-/* MOBILE FEINJUSTIERUNG: weniger enger Bildausschnitt */
-@media (max-width: 719px) {
-
-  /* Esszimmer vorher */
-  .image-sequence:has(img[src="images/Esszimmer-before.jpg"]) {
-    height: 430px !important;
+  img[src="images/terrasse-before.jpg"] {
+    object-position: center center;
   }
 
-  /* Hauswirtschaftsraum vorher */
-  .before-after-wrapper:has(img[src="images/hwr-before.jpg"]) {
-    height: 430px !important;
-  }
-
-  /* Vorbauwand Bauphase */
-  .image-sequence:has(img[src="images/Vorbauwand-process.jpg"]) {
-    height: 430px !important;
-  }
-
-  /* Gartenbank / Sichtschutz */
-  .image-sequence:has(img[src="images/sichtschutz-before.jpg"]),
-  .image-sequence:has(img[src="images/sichtschutz-after-1.jpg"]),
-  .image-sequence:has(img[src="images/sichtschutz-after-2.jpg"]) {
-    height: 430px !important;
-  }
-
-  /* Terrassenbau vorher */
-  .image-sequence:has(img[src="images/terrasse-before.jpg"]) {
-    height: 420px !important;
-  }
-
-  /* Outdoor Küche – nur minimal entspannen */
   img[src="images/outdoor-final.jpg"] {
-    transform: scale(0.97);
-    transform-origin: center center;
+    object-position: center center;
   }
+
 }
