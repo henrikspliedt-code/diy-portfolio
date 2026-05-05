@@ -491,3 +491,27 @@ body.menu-open {
 .contact-icon {
   font-size: 1.2rem;
 }
+@media (max-width: 719px) {
+
+  /* 1. Esszimmer vorher – etwas mehr Raum zeigen */
+  img[src="images/Esszimmer-before.jpg"] {
+    object-position: center 35%;
+  }
+
+  /* 2. Hauswirtschaftsraum – mehr links/rechts sichtbar */
+  img[src="images/hwr-before.jpg"] {
+    object-position: center 40%;
+  }
+
+  /* 3. Vorbauwand Bauphase – mehr Kontext nach oben/unten */
+  img[src="images/Vorbauwand-before.jpg"] {
+    object-position: center 30%;
+  }
+
+  /* 4. Gartenbank / Sichtschutz – weniger enger Fokus */
+  img[src="images/sichtschutz-before.jpg"],
+  img[src="images/sichtschutz-after.jpg"] {
+    object-position: center 38%;
+  }
+
+}
