@@ -530,29 +530,44 @@ body.menu-open {
   }
 
 }
-/* STATISCHE EINZELBILDER: Premium-Inszenierung */
+/* =========================================================
+   PREMIUM INSZENIERUNG FÜR STATISCHE EINZELBILDER + HERO
+   Ruhiger Cinematic-Look ohne Layoutverschiebung
+========================================================= */
 
-.card > img {
-  transition:
-    transform 2.4s ease,
-    filter 2.4s ease;
-  transform-origin: center center;
+.card {
+  overflow: hidden;
 }
 
-/* Desktop */
+/* Einzelbilder innerhalb normaler Karten */
+.card > img {
+  width: 100%;
+  display: block;
+  transform-origin: center center;
+
+  transition:
+    transform 2.8s ease,
+    filter 2.8s ease;
+}
+
+/* Desktop Hover */
 .card:hover > img {
   transform: scale(1.095);
+
   filter:
     contrast(1.10)
     saturate(1.10)
     brightness(1.04);
 }
 
-/* Mobile */
+/* =========================================================
+   MOBILE AUTO-ANIMATION
+========================================================= */
+
 @media (max-width: 719px) {
 
   .card > img {
-    animation: subtleImageFocus 8s ease-in-out infinite;
+    animation: subtleImageFocus 10s ease-in-out infinite;
   }
 
 }
@@ -561,6 +576,7 @@ body.menu-open {
 
   0% {
     transform: scale(1.025);
+
     filter:
       contrast(1.02)
       saturate(1.02);
@@ -568,6 +584,7 @@ body.menu-open {
 
   20% {
     transform: scale(1.11);
+
     filter:
       contrast(1.12)
       saturate(1.12)
@@ -576,6 +593,7 @@ body.menu-open {
 
   80% {
     transform: scale(1.11);
+
     filter:
       contrast(1.12)
       saturate(1.12)
@@ -584,22 +602,33 @@ body.menu-open {
 
   100% {
     transform: scale(1.025);
+
     filter:
       contrast(1.02)
       saturate(1.02);
   }
 
 }
-/* HERO-BILD: gleicher cineastischer Fokus */
+
+/* =========================================================
+   HERO IMAGE – GLEICHER CINEMATIC LOOK
+========================================================= */
+
+.hero__image-wrapper {
+  overflow: hidden;
+}
 
 .hero__image {
-  animation: heroImageFocus 10s ease-in-out infinite;
+  transform-origin: center center;
+
+  animation: heroImageFocus 12s ease-in-out infinite;
 }
 
 @keyframes heroImageFocus {
 
   0% {
     transform: scale(1.03);
+
     filter:
       brightness(0.82)
       saturate(1.05);
@@ -607,6 +636,7 @@ body.menu-open {
 
   20% {
     transform: scale(1.12);
+
     filter:
       brightness(0.86)
       saturate(1.10);
@@ -614,6 +644,7 @@ body.menu-open {
 
   80% {
     transform: scale(1.12);
+
     filter:
       brightness(0.86)
       saturate(1.10);
@@ -621,9 +652,12 @@ body.menu-open {
 
   100% {
     transform: scale(1.03);
+
     filter:
       brightness(0.82)
       saturate(1.05);
   }
+
+}
 
 }
