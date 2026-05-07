@@ -530,3 +530,28 @@ body.menu-open {
   }
 
 }
+/* PREMIUM HOVER FÜR EINZELBILDER */
+
+.card img:not(.before-after-img):not(.sequence-img) {
+  transition:
+    transform 1.8s ease,
+    filter 1.8s ease;
+}
+
+.card:hover img:not(.before-after-img):not(.sequence-img) {
+  transform: scale(1.045);
+  filter:
+    contrast(1.04)
+    saturate(1.03)
+    brightness(1.02);
+}
+
+/* Bildcontainer etwas hochwertiger */
+.card {
+  transform: translateZ(0);
+}
+
+.card:hover {
+  box-shadow:
+    0 22px 54px rgba(31, 31, 31, 0.14);
+}
