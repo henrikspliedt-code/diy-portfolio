@@ -530,41 +530,55 @@ body.menu-open {
   }
 
 }
-/* STATISCHE EINZELBILDER: dezente Inszenierung ohne Vorher/Nachher */
+/* STATISCHE EINZELBILDER: Premium-Inszenierung */
 
 .card > img {
   transition:
-    transform 1.8s ease,
-    filter 1.8s ease;
+    transform 2.2s ease,
+    filter 2.2s ease;
   transform-origin: center center;
 }
 
-/* Desktop: hochwertiger Hover */
+/* Desktop */
 .card:hover > img {
-  transform: scale(1.045);
-  filter: contrast(1.04) saturate(1.04) brightness(1.02);
+  transform: scale(1.075);
+  filter:
+    contrast(1.08)
+    saturate(1.08)
+    brightness(1.03);
 }
 
-/* Mobile: dezente automatische Bewegung, weil Hover dort nicht zuverlässig wirkt */
+/* Mobile */
 @media (max-width: 719px) {
+
   .card > img {
-    animation: subtleImageFocus 9s ease-in-out infinite;
+    animation: subtleImageFocus 7s ease-in-out infinite;
   }
+
 }
 
 @keyframes subtleImageFocus {
+
   0% {
-    transform: scale(1.015);
-    filter: contrast(1.02) saturate(1.02);
+    transform: scale(1.02);
+    filter:
+      contrast(1.02)
+      saturate(1.02);
   }
 
   50% {
-    transform: scale(1.045);
-    filter: contrast(1.05) saturate(1.04) brightness(1.02);
+    transform: scale(1.08);
+    filter:
+      contrast(1.10)
+      saturate(1.10)
+      brightness(1.04);
   }
 
   100% {
-    transform: scale(1.015);
-    filter: contrast(1.02) saturate(1.02);
+    transform: scale(1.02);
+    filter:
+      contrast(1.02)
+      saturate(1.02);
   }
+
 }
