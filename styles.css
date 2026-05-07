@@ -530,28 +530,41 @@ body.menu-open {
   }
 
 }
-/* PREMIUM HOVER FÜR EINZELBILDER */
+/* STATISCHE EINZELBILDER: dezente Inszenierung ohne Vorher/Nachher */
 
-.card img:not(.before-after-img):not(.sequence-img) {
+.card > img {
   transition:
     transform 1.8s ease,
     filter 1.8s ease;
+  transform-origin: center center;
 }
 
-.card:hover img:not(.before-after-img):not(.sequence-img) {
+/* Desktop: hochwertiger Hover */
+.card:hover > img {
   transform: scale(1.045);
-  filter:
-    contrast(1.04)
-    saturate(1.03)
-    brightness(1.02);
+  filter: contrast(1.04) saturate(1.04) brightness(1.02);
 }
 
-/* Bildcontainer etwas hochwertiger */
-.card {
-  transform: translateZ(0);
+/* Mobile: dezente automatische Bewegung, weil Hover dort nicht zuverlässig wirkt */
+@media (max-width: 719px) {
+  .card > img {
+    animation: subtleImageFocus 9s ease-in-out infinite;
+  }
 }
 
-.card:hover {
-  box-shadow:
-    0 22px 54px rgba(31, 31, 31, 0.14);
+@keyframes subtleImageFocus {
+  0% {
+    transform: scale(1.015);
+    filter: contrast(1.02) saturate(1.02);
+  }
+
+  50% {
+    transform: scale(1.045);
+    filter: contrast(1.05) saturate(1.04) brightness(1.02);
+  }
+
+  100% {
+    transform: scale(1.015);
+    filter: contrast(1.02) saturate(1.02);
+  }
 }
