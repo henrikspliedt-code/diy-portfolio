@@ -531,18 +531,22 @@ body.menu-open {
 
 }
 /* =========================================================
-   PREMIUM INSZENIERUNG FÜR STATISCHE EINZELBILDER + HERO
-   Ruhiger Cinematic-Look ohne Layoutverschiebung
+   PREMIUM INSZENIERUNG FÜR STATISCHE EINZELBILDER
+   Bewegung nur innerhalb eines festen Bildrahmens
 ========================================================= */
 
-.card {
+/* Nur Karten mit direktem Einzelbild bekommen einen festen Clip-Rahmen */
+.card:has(> img) {
   overflow: hidden;
 }
 
-/* Einzelbilder innerhalb normaler Karten */
+/* Einzelbild bleibt im festen Kartenbereich und wird sauber geclippt */
 .card > img {
   width: 100%;
+  height: 360px;
   display: block;
+  object-fit: cover;
+  object-position: center center;
   transform-origin: center center;
 
   transition:
@@ -560,13 +564,11 @@ body.menu-open {
     brightness(1.04);
 }
 
-/* =========================================================
-   MOBILE AUTO-ANIMATION
-========================================================= */
-
+/* Mobile: gleiche feste Bildhöhe wie Sequenzen */
 @media (max-width: 719px) {
 
   .card > img {
+    height: 360px;
     animation: subtleImageFocus 10s ease-in-out infinite;
   }
 
@@ -606,56 +608,6 @@ body.menu-open {
     filter:
       contrast(1.02)
       saturate(1.02);
-  }
-
-}
-
-/* =========================================================
-   HERO IMAGE – GLEICHER CINEMATIC LOOK
-========================================================= */
-
-.hero__image-wrapper {
-  overflow: hidden;
-}
-
-.hero__image {
-  transform-origin: center center;
-
-  animation: heroImageFocus 12s ease-in-out infinite;
-}
-
-@keyframes heroImageFocus {
-
-  0% {
-    transform: scale(1.03);
-
-    filter:
-      brightness(0.82)
-      saturate(1.05);
-  }
-
-  20% {
-    transform: scale(1.12);
-
-    filter:
-      brightness(0.86)
-      saturate(1.10);
-  }
-
-  80% {
-    transform: scale(1.12);
-
-    filter:
-      brightness(0.86)
-      saturate(1.10);
-  }
-
-  100% {
-    transform: scale(1.03);
-
-    filter:
-      brightness(0.82)
-      saturate(1.05);
   }
 
 }
