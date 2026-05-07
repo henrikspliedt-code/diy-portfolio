@@ -590,3 +590,40 @@ body.menu-open {
   }
 
 }
+/* HERO-BILD: gleicher cineastischer Fokus */
+
+.hero__image {
+  animation: heroImageFocus 10s ease-in-out infinite;
+}
+
+@keyframes heroImageFocus {
+
+  0% {
+    transform: scale(1.03);
+    filter:
+      brightness(0.82)
+      saturate(1.05);
+  }
+
+  20% {
+    transform: scale(1.12);
+    filter:
+      brightness(0.86)
+      saturate(1.10);
+  }
+
+  80% {
+    transform: scale(1.12);
+    filter:
+      brightness(0.86)
+      saturate(1.10);
+  }
+
+  100% {
+    transform: scale(1.03);
+    filter:
+      brightness(0.82)
+      saturate(1.05);
+  }
+
+}
